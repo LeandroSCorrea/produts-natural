@@ -185,6 +185,7 @@ a.logo {
   text-align: center;
 }
 .rodape iframe {
+  height: 250px;
   padding: 30px;
 }
 .msg-erro {
