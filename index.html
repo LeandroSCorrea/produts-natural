@@ -7,22 +7,26 @@
     <title>produts natural</title>
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="carrossel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <div class="redessociastopo">
         <nav class="icon-top">
-          <a href="https://www.facebook.com/"
+          <a href="https://www.facebook.com/" target="_blank"
             ><img
               src="assets/facebook.svg"
               alt="ícone do facebook da loja para contato"
           /></a>
-          <a href="https://www.instagram.com/"
+          <a href="https://www.instagram.com/" target="_blank"
             ><img
               src="assets/instagram.svg"
               alt="ícone do instagram da loja para contato"
           /></a>
-          <a href="https://web.whatsapp.com/"
+          <a href="https://web.whatsapp.com/" target="_blank"
             ><img
               src="assets/whatsapp.svg"
               alt="ícone do what app para contato"
@@ -32,16 +36,28 @@
     </header>
     <div>
       <!-- menu com navegação do site -->
-      <div>
-        <nav class="navbar-principal">
+      <div class="flex-container-0">
+        <div class="navbar-principal">
           <a href="#">Quem somos</a>
+        </div>
+        <div class="navbar-principal">
           <a href="#">Nossas lojas</a>
+        </div>
+        <div class="navbar-principal">
           <a href="#">Franquias</a>
+        </div>
+        <div class="navbar-principal">
           <a class="logo" href="#">Logo</a>
+        </div>
+        <div class="navbar-principal">
           <a href="#">Notícias</a>
+        </div>
+        <div class="navbar-principal">
           <a href="#">Trabalhe conosco</a>
+        </div>
+        <div class="navbar-principal">
           <a href="#">Contato</a>
-        </nav>
+        </div>
       </div>
       <!-- botão de pesquisa -->
       <div class="search">
@@ -89,17 +105,17 @@
               <img src="assets/img/rectangle1.png" alt="oferta 1" />
             </a>
           </div>
-          <div>
+          <div class="img-oferta-index">
             <a href="oferta2.html">
               <img src="assets/img/rectangle2.png" alt="oferta 2" />
             </a>
           </div>
-          <div>
+          <div class="img-oferta-index">
             <a href="oferta3.html">
               <img src="assets/img/rectangle3.png" alt="oferta 3" />
             </a>
           </div>
-          <div>
+          <div class="img-oferta-index">
             <a href="oferta4.html">
               <img src="assets/img/rectangle4.png" alt="oferta 4" />
             </a>
@@ -107,59 +123,102 @@
         </div>
       </div>
       <!-- Flutuar no site link do whatapp -->
-      <div class="img-whatapp-fixed">
+      <!-- <div>
         <a
           href="https://api.whatsapp.com/send/?phone=5561991288093&text=Ol%C3%A1%21+Gostaria+de+saber+mais+informa%C3%A7%C3%B5es.+Fique+a+vontade+para+perguntar+por+aquihttps://web.whatsapp.com/+%21&app_absent=0"
           target="_blank"
         >
           <img
+            class="img-whatapp-fixed"
             src="assets/whatsapp-fixed.svg"
-            width="50px"
-            height="50px"
             alt="ícone do what app para contato"
           />
         </a>
-      </div>
+      </div> -->
       <div class="paragrafo-produtos">
         <p>Sua escolha natural</p>
       </div>
-      <div>
-        <nav class="produtos-circulos">
-          <a href="produtos.html">Produtos</a>
-          <a href="">Temperos</a>
-          <a href="">Chás</a>
-          <a href="">Granel</a>
-          <a href="">Vitaminas e Suplementos</a>
-          <a href="">Bebidas</a>
-        </nav>
+      <div class="flex-container-1">
+        <div class="img-opcoes-index">
+          <a href="produtos.html">
+            <img src="assets/icons/produtos.png" alt="Todos os produtos" />
+          </a>
+        </div>
+        <div class="img-opcoes-index">
+          <a href="#"><img src="assets/icons/temperos.png" alt="Temperos" /></a>
+        </div>
+        <div class="img-opcoes-index">
+          <a href="#"><img src="assets/icons/cha.png" alt="Chás" /></a>
+        </div>
+        <div class="img-opcoes-index">
+          <a href=""><img src="assets/icons/granel.png" alt="Granel" /></a>
+        </div>
+        <div class="img-opcoes-index">
+          <a href="">
+            <img
+              src="assets/icons/vitaminas.png"
+              alt="Vitaminas e Suplementos"
+            />
+          </a>
+        </div>
+        <div class="img-opcoes-index">
+          <a href=""><img src="assets/icons/bebidas.png" alt="Bebidas" /></a>
+        </div>
       </div>
-      <!-- Footer -->
     </div>
-    <div class="rodape">
-      <div class="rodape-direito">
-        <p>Receba todas as nossas promoções</p>
+    <!-- Footer -->
+    <div class="flex-container-2">
+      <div class="rodape">
+        <div>
+          <h3>Receba todas as nossas promoções</h3>
+        </div>
+        <!-- formulário -->
+        <div class="rodape">
+          <form
+            action="teste.html"
+            method="POST"
+            onsubmit="return checa_formulario(this)"
+          >
+            <p>
+              <span class="msg-erro msg-nome"></span>
+              <label for="name">Nome</label>
+            </p>
+            <input type="text" name="name" id="name" />
+            <p>
+              <label for="email">Email</label>
+              <span class="msg-erro msg-email"></span>
+            </p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@email.com..."
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            />
+            <p>
+              <span class="msg-erro msg-tel"></span>
+              <label for="tel">Telefone</label>
+            </p>
+            <input type="tel" name="tel" id="tel" />
+            <p>
+              <input class="button" type="submit" value="Enviar" onclick="" />
+            </p>
+          </form>
+        </div>
       </div>
-      <div class="rodape-esquerdo">
-        <form
-          class="form"
-          action="teste.html"
-          method="POST"
-          onsubmit="return checa_formulario(this)"
-        >
-          <label for="name">Nome</label>
-          <input type="text" name="name" id="name" />
-          <span class="msg-erro msg-nome"></span>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email@email.com..."
-          />
-          <label for="tel">telefone</label>
-          <input type="tel" name="tel" id="tel" />
-          <input type="submit" value="Enviar" class="button" />
-        </form>
+      <div class="rodape">
+        <div class="rodape">
+          <h3>Nossa localização</h3>
+        </div>
+        <div class="rodape">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982923.5339293887!2d-48.357596301300305!3d-15.775188467175127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d18e45b91a3%3A0x24e8d3620bd85d7f!2sBras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1626963314649!5m2!1spt-BR!2sbr"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
       </div>
     </div>
     <script src="carrossel.js"></script>
