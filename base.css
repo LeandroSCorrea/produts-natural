@@ -111,6 +111,9 @@ a.logo {
 .img-centro div {
   padding: 10px;
 }
+.img-centro img {
+  border-radius: 15px;
+}
 /* dentro do index */
 .flex-container {
   display: flex;
