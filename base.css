@@ -107,6 +107,10 @@ a.logo {
   background-color: #fff;
   padding: 20px;
 }
+.img-centro {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* dentro do index */
 .flex-container {
   display: flex;
