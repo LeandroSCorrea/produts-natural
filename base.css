@@ -102,20 +102,20 @@ a.logo {
 .navbar-secundaria a:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.centro {
+.flex-container-3 {
   flex: 80%;
-  background-color: #fff;
-  padding: 20px;
-}
-.img-centro {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+.img-centro div {
+  padding: 10px;
 }
 /* dentro do index */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: baseline;
   background-color: #bbb;
 }
 /* dentro do index */
